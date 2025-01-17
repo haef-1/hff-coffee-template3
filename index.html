@@ -80,18 +80,19 @@
           :class="{'active': selectedCategory === 'coffee'}"
           @click="filter('coffee')"
         >
-        <i class="fa-solid fa-mug-hot"></i> Coffee
+          <i class="fa-solid fa-mug-hot"></i> Coffee
         </button>
         <button
           :class="{'active': selectedCategory === 'ricebowl'}"
           @click="filter('ricebowl')"
-        ><i class="fa-solid fa-bowl-rice"></i> Rice Bowl
+        >
+          <i class="fa-solid fa-bowl-rice"></i> Rice Bowl
         </button>
         <button
           :class="{'active': selectedCategory === 'mocktail'}"
           @click="filter('mocktail')"
         >
-        <i class="fa-solid fa-martini-glass-citrus"></i> Mocktail
+          <i class="fa-solid fa-martini-glass-citrus"></i> Mocktail
         </button>
       </div>
       <!-- Menu Items -->
@@ -128,7 +129,12 @@
         </template>
       </div>
       <!-- Modal-box -->
-      <div class="modal" x-show="isModalOpen" @click.self="closeModal" x-init="init">
+      <div
+        class="modal"
+        x-show="isModalOpen"
+        @click.self="closeModal"
+        x-init="init"
+      >
         <div class="modal-box" id="modal-box">
           <a href="#" class="close-modal" @click.prevent="closeModal"
             ><i class="fa-solid fa-arrow-down"></i
@@ -148,6 +154,63 @@
       </div>
       <!-- Modal-box -->
     </section>
+
+    <section class="contact" id="contact">
+      <div class="row1">
+        <div class="reservation">
+          <div class="lets-talk">
+            <h2>Lest Talk</h2>
+            <h1>Want to Reseve a Table?</h1>
+          </div>
+          <a
+            href="https://wa.me/+6289653322338"
+            target="_blank"
+            class="contact-now"
+            >Contact Now</a
+          >
+        </div>
+        <p class="about-hff">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni optio
+          nihil eaque eligendi minus est consectetur laborum illum nobis. Quasi
+          similique, voluptates reiciendis blanditiis corrupti obcaecati id sunt
+          ut tempore.
+        </p>
+      </div>
+      <div class="row1-row2">
+        <div class="dashed"></div>
+      </div>
+      <div class="row2">
+        <a class="contact-logo" href="#home">hff <br>coffee
+        </a>
+        <div class="social-media">
+          <h2>Our <br>Social Media</h2>
+          <a href="https://wa.me/+628965332338" target="_blank"> <i class="fa-brands fa-whatsapp"></i> +6289653322338</a>
+          <a href="https://www.instagram.com/hafiiid_m/" target="_blank"> <i class="fa-brands fa-instagram"></i> hafiiid_m</a>
+          <a href="https://tiktok.com" target="_blank"> <i class="fa-brands fa-tiktok"></i> haef9308</a>
+        </div>
+        <div class="location">
+          <h2>Our Location</h2>
+          <a href="#">Jl.abcdefghijklmn</a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.5244142995184!2d109.5204376649757!3d-6.898563559574676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fd8fdec2694ed%3A0xafda5c5da7069bc5!2sMasjid%20Al-Qomariyah!5e1!3m2!1sen!2sid!4v1737081366953!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          Built with <i class="fa fa-heart"></i> by
+          <a href="https://github.com/haef-1" target="_blank">hff </a>| © 2025
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
